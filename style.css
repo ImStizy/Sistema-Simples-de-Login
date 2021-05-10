@@ -1,0 +1,424 @@
+  /*------------------------------------*/
+ /*-----Setando estilos universais-----*/
+/*------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Oswald', Helvetica, sans-serif;
+}
+html{
+    /*
+    background: #00B4D8;
+    */
+    background: rgb(212, 212, 212);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+  /*------------------------*/
+ /*--Círculos decorativos--*/
+/*------------------------*/
+
+.Conjunto1{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    /*
+    top: 190px;
+    left: 400px;
+    */
+    top: -25%;
+    left: -200px;
+    transform: scale(3);
+}
+.Bola1, .Bola2{
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    background: linear-gradient(to right, #00B4D8, #ADE8F4 90%);
+    border-radius: 100%;
+    transform: rotateX(20deg) rotateY(20deg) rotateZ(60deg);
+}
+.Bola2{
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    background: linear-gradient(to right, #03045E, #044fb1 90%);
+}
+.Bola1{
+    left: 30px;
+    bottom: -115px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+}
+
+.Conjunto2{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    /*
+    top: 190px;
+    left: 400px;
+    top: 55%;
+    left: 80%;
+    */
+    top: 55%;
+    right: 200px;
+    margin-right: 50px;
+    transform: scale(3) translate(10px);;
+}
+.Bola3, .Bola4{
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    background: linear-gradient(to right, #00B4D8, #ADE8F4 90%);
+    border-radius: 100%;
+    transform: rotateX(-20deg) rotateY(-20deg) rotateZ(-120deg);
+}
+.Bola4{
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    background: linear-gradient(to right, #03045E, #044fb1 90%);
+    top: 10px;
+}
+.Bola3{
+    left: 25px;
+    top: 30px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+}
+
+  /*--------------------------*/
+ /*------Caixa de login------*/
+/*--------------------------*/
+
+.CaixaLoginBox{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 2s ease-in-out;
+}
+.CaixaLogin{
+    background: rgba( 198, 26, 26, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    height: 470px;
+    width: 350px;
+    transition: 0.7s ease-in-out;
+    text-align: center;
+    display: block;
+}
+.CaixaLogin:hover{
+    height: 500px;
+    width: 380px;
+}
+
+  /*---------------------------------------*/
+ /*------Elementos da caixa de login------*/
+/*---------------------------------------*/
+
+.BemVindo{
+    font-size: 35px;
+    color: white;
+    transform: translateY(70px);
+    cursor: default;
+    height: fit-content;
+    user-select: none;
+}
+.Senha, .Usuário{
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 80%;
+    left: 10%;
+    top: 150px;
+    text-align: center;
+    outline: none;
+    font-size: 18px;
+    color:grey;
+    border-radius: 50px;
+    transition: 0.6s ease-in-out;
+}
+.Senha{
+    margin-top: 25px;
+}
+.Senha:hover, .Usuário:hover{
+    background: honeydew;
+}
+.LoginBTN{
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    outline: none;
+    position: absolute;
+    top: 330px;
+    right: 50px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+.LoginBTN:hover{
+    background: rgb(101, 233, 101);
+}
+.RegistrarBTN{
+    border-radius: 50px;
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+    outline: none;
+    border: 1px transparent darkgray;
+    position: absolute;
+    top: 330px;
+    left: 45px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+.RegistrarBTN:hover{
+    background: rgb(255, 88, 88);
+}
+
+.Github1{
+    position: absolute;
+    transform: scale(2.5) translate(-20%, -10%);
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
+    top: 30%;
+    transition: 0.6s ease-in-out;
+    text-decoration: black;
+    color: black;
+}
+a:visited, a:hover, a:focus, a:active{
+    text-decoration: black;
+    color: black;
+}
+a:-webkit-any-link{
+    color:black;
+    text-decoration: black;
+}
+/*------------------------------------------*/
+/*------Elementos da caixa de registro------*/
+/*------------------------------------------*/
+
+.Senha2, .Usuário2{
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 80%;
+    left: 10%;
+    top: 150px;
+    text-align: center;
+    outline: none;
+    font-size: 18px;
+    color:grey;
+    border-radius: 50px;
+    transition: 0.6s ease-in-out;
+    display: none;
+    opacity: 0;
+}
+.Senha2{
+    margin-top: 25px;
+}
+.Senha2:hover, .Usuário2:hover{
+    background: honeydew;
+}
+
+.LoginBTN2:hover{
+    background: rgb(101, 233, 101);
+}
+.RegistrarBTN2{
+    border-radius: 50px;
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+    outline: none;
+    border: 1px transparent darkgray;
+    position: absolute;
+    top: 330px;
+    left: 50%;
+    top:70%;
+    transform: translate(-50%, -50%) translateY(15px);
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    display: none;
+    opacity: 0;
+}
+.RegistrarBTN2:hover{
+    background: rgb(255, 88, 88);
+}
+.VoltarRegistro{
+    border-radius: 50px;
+    height: 40px;
+    width: 70px;
+    font-size: 18px;
+    outline: none;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    display: none;
+    opacity: 0;
+}
+
+  /*-------------------*/
+ /*------Pop Ups------*/
+/*-------------------*/
+
+.Logado{
+    color: white;
+    height: 60px;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    background: rgb(79, 79, 204);
+    border-radius: 50px;
+    border: 2px solid black;
+    transform: translateY(10px) translate(-50%, -120%);
+    margin: 0;
+    left: 50%;
+    transition: 2s ease-in-out;
+}
+.LogadoP{
+    position: relative;
+    top: 15px;
+    right: 25px;
+}
+.Aprovado{
+    height: 25px;
+    width: 25px;
+    background: rgb(58, 253, 58);
+    border: 2px solid black;
+    border-radius: 50px;
+    position: relative;
+    left: 200px;
+    top: -10px
+}
+
+.Erro{
+    color: white;
+    height: 60px;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    background: rgb(79, 79, 204);
+    border-radius: 50px;
+    border: 2px solid black;
+    transform: translateY(10px) translate(-50%, -120%);
+    margin: 0;
+    left: 50%;
+    transition: 2s ease-in-out;
+}
+.LogadoE{
+    position: relative;
+    top: 15px;
+    right: 25px;
+}
+.Recusado{
+    height: 25px;
+    width: 25px;
+    background: rgb(253, 58, 58);
+    border: 2px solid black;
+    border-radius: 50px;
+    position: relative;
+    left: 200px;
+    top: -10px
+}
+
+  /*-----------------------------*/
+ /*------Painel de Usuário------*/
+/*-----------------------------*/
+.Créditos{
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%);
+    cursor: default;
+}
+.CréditosDiscord{
+    font-size: 23px;
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%);
+    cursor: default;
+}
+
+.Perfil{
+    height: 400px;
+    width: 60%;
+    position: absolute;
+    background: black;
+    background: rgba( 198, 26, 26, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 2s ease-in-out;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.BemVindoPerfil{
+    color: black;
+    font-size: 22px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%);
+    background: none;
+    width: 250px;
+    cursor: default;
+}
+.UserCover{
+    background: gainsboro;
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+    border: 5px solid gray;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+#UserImg{
+    transform: scale(3) translate(-50%, -50%);
+    top: 59%;
+    left: 23%;
+    position: relative;
+    color: black;
+}
+
+.VoltarPerfil{
+    border-radius: 50px;
+    height: 40px;
+    width: 70px;
+    font-size: 18px;
+    outline: none;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
