@@ -9,6 +9,7 @@
     margin: 0;
     border: 0;
     font-family: 'Oswald', Helvetica, sans-serif;
+    overflow: hidden;
 }
 html{
     /*
