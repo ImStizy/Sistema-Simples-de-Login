@@ -189,7 +189,7 @@ html{
     transition: 0.6s ease-in-out;
 }
 .RegistrarBTN:hover{
-    background: rgb(255, 88, 88);
+    background: cyan;
 }
 
 .Github1{
