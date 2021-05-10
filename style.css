@@ -9,7 +9,6 @@
     margin: 0;
     border: 0;
     font-family: 'Oswald', Helvetica, sans-serif;
-    overflow: hidden;
 }
 html{
     /*
@@ -27,8 +26,8 @@ html{
 /*------------------------*/
 
 .Conjunto1{
-    height: fit-content;
-    width: fit-content;
+    height: -50px;
+    width: -50px;
     position: absolute;
     /*
     top: 190px;
@@ -64,6 +63,7 @@ html{
     height: fit-content;
     width: fit-content;
     position: absolute;
+    overflow: visible;
     /*
     top: 190px;
     left: 400px;
